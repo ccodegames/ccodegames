@@ -25,16 +25,41 @@
                 width:100%;
             }
         </style>
+        
+        <script>
+            // constants
+            var subtitle = document.getElementById('subtitle');
+            
+            window.onscroll = function(e) {
+                var body = document.getElementById('content');
+                var bodyPos = body.getBoundingClientRect().top;
+                var heading = document.getElementById('heading');
+                var headingPos = heading.getBoundingClientRect().bottom;
+                
+                //window.alert("top: " + body.offsetTop);
+                //window.alert("bottom: " + body.offsetBottom);
+                
+                if(bodyPos <= headingPos && subtitle != null) {
+                    subtitle.parentNode.removeChild(subtitle);
+                    //window.alert(body.offsetTop);
+                }
+                //window.alert("end func");
+            }
+        
+            function assignVars() {
+                subtitle = document.getElementById('subtitle');
+            }
+        </script>
     </head>
     
-    <body>
+    <body onload="assignVars()">
         <!-- This div is the banner, with the title and authors. -->
-        <div class="banner" style="padding:10px; position:fixed;">
+        <div id="heading" class="banner" style="padding:10px; position:fixed;">
             <h1>C.Code Games</h1>
-            <h3>By Brayden Cloud and Gabe Castro</h3>
+            <h3 id="subtitle">By Brayden Cloud and Gabe Castro</h3>
         </div>
         
-        <div style="margin-top:200px; width:100%; height:120%;">
+        <div id="content" style="margin-top:200px; width:100%; height:120%;">
             <p>paragraph</p>
             <br>
             <br>
