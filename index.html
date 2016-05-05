@@ -34,16 +34,12 @@
                 var body = document.getElementById('content');
                 var bodyPos = body.getBoundingClientRect().top;
                 var heading = document.getElementById('heading');
-                var headingPos = heading.getBoundingClientRect().bottom;
                 
                 heading.style.opacity = bodyPos / 100.0
             }
         
         function loaded() {
             // on load function
-            var title = document.getElementById('heading');
-            var subtitle = document.getElementById('subtitle');
-            subtitle.style.top = title.getBoundingClientRect().bottom;
         }
         </script>
     </head>
