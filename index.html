@@ -36,14 +36,7 @@
                 var heading = document.getElementById('heading');
                 var headingPos = heading.getBoundingClientRect().bottom;
                 
-                //window.alert("top: " + body.offsetTop);
-                //window.alert("bottom: " + body.offsetBottom);
-                
-                if(bodyPos <= headingPos && subtitle != null) {
-                    subtitle.parentNode.removeChild(subtitle);
-                    //window.alert(body.offsetTop);
-                }
-                //window.alert("end func");
+                heading.style.opacity = bodyPos / 100.0
             }
         
             function assignVars() {
@@ -54,12 +47,12 @@
     
     <body onload="assignVars()">
         <!-- This div is the banner, with the title and authors. -->
-        <div id="heading" class="banner" style="padding:10px; position:fixed;">
+        <div id="heading" class="banner" style="padding:10px;">
             <h1>C.Code Games</h1>
             <h3 id="subtitle">By Brayden Cloud and Gabe Castro</h3>
         </div>
         
-        <div id="content" style="margin-top:200px; width:100%; height:120%;">
+        <div id="content">
             <p>paragraph</p>
             <br>
             <br>
