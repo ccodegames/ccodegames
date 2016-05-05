@@ -42,6 +42,9 @@
         
             function loaded() {
                 // on load function
+                var title = document.getElementById('heading');
+                var subtitle = document.getElementById('subtitle');
+                subtitle.style.top = title.getBoundingClientRect().bottom;
             }
         </script>
     </head>
