@@ -12,20 +12,20 @@
                 margin: 0px;
             }
         
-            h1 {
-                margin-bottom: 0px;
-            }
+        h1 {
+            margin-bottom: 0px;
+        }
         
-            .banner {
-                font-family: "Arial Black", Gadget, sans-serif;
-                background-color:#820000;
-                text-align:center;
-                top:0px;
-                left:0px;
-                width:100%;
-                margin:0px;
-                padding:5px;
-            }
+        .banner {
+            font-family: "Arial Black", Gadget, sans-serif;
+            background-color:#820000;
+            text-align:center;
+            top:0px;
+            left:0px;
+            width:100%;
+            margin:0px;
+            padding:5px;
+        }
         </style>
         
         <script>
@@ -35,32 +35,27 @@
                 var bodyPos = body.getBoundingClientRect().top;
                 var heading = document.getElementById('heading');
                 var headingPos = heading.getBoundingClientRect().bottom;
-                var subtitle = document.getElementById('subtitle');
                 
-                subtitle.style.opacity = (bodyPos - 30) / 100.0
+                heading.style.opacity = bodyPos / 100.0
             }
         
-            function loaded() {
-                // on load function
-                var title = document.getElementById('heading');
-                var subtitle = document.getElementById('subtitle');
-                subtitle.style.top = title.getBoundingClientRect().bottom;
-            }
+        function loaded() {
+            // on load function
+            var title = document.getElementById('heading');
+            var subtitle = document.getElementById('subtitle');
+            subtitle.style.top = title.getBoundingClientRect().bottom;
+        }
         </script>
     </head>
     
     <body onload="loaded()">
         <!-- This div is the banner, with the title and authors. -->
-        <div class="banner">
-            <div id="heading" class="banner" style="padding:10px; position:fixed; z-index:1;">
-                <h1>C.Code Games</h1>
-            </div>
-            <div id="subtitle" style="margin-top:80px;">
-                <h3 class="banner">By Brayden Cloud and Gabe Castro</h3>
-            </div>
+        <div id="heading" class="banner" style="padding:10px; position:fixed; z-index:1;">
+            <h1>C.Code Games</h1>
+            <h3>By Brayden Cloud and Gabe Castro</h3>
         </div>
         
-        <div id="content">
+        <div id="content" style="margin-top:180px;">
             <p>p1</p>
             <br>
             <br>
@@ -111,5 +106,5 @@
             <p>p3</p>
         </div>
     </body>
-
+    
 </html>
