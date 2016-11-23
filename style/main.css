@@ -7,3 +7,7 @@
 .menuBar {
     display: inline;
 }
+
+.menuBar > li {
+    float: left;
+}
