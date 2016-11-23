@@ -5,9 +5,9 @@
 }
 
 .menuBar {
-    display: inline;
+    
 }
 
-li {
+.menuBar li {
     float: left;
 }
