@@ -7,6 +7,7 @@
 /* Menubar style along with sub elements */
 .menuBar {
     display: inline-block;
+    margin: 0 auto;
 }
 .menuBar div {
     float: left;
