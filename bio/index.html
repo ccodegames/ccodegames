@@ -6,20 +6,33 @@
         <head>
             <title>C.Code Bio</title>
 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $("#projects").hover(function() {
+                        $(this).children(".dropDown").slideToggle();
+                    });
+                });
+            </script>
 
-            <link rel="stylesheet" href="/style/main.css" type="text/css" />
+            <link rel="stylesheet" href="../style/main.css" type="text/css" />
 
             <script>
             </script>
         </head>
 
         <body class="body">
-            <h1>Bio</h1>
+            <h1 class="mainHeader">Bio</h1>
 
             <nav class="menuBar">
                     <div class="menuItem" id="announcements"><a href="/announcements">Announcements</a></div>
                     <div class="menuItem" id="bio"><a href="/bio">Bio</a></div>
-                    <div class="menuItem" id="projects"><a href="/projects">Projects</a></div>
+                    <div class="menuItem" id="projects">
+                        <a href="/projects">Projects</a>
+                        <a class="dropDownItem" href="#">project 1</a>
+                        <a class="dropDownItem" href="#">project 2</a>
+                    </div>
+                    <div class="menuItem">New tab</div>
             </nav>
         </body>
 
