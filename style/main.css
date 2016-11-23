@@ -22,7 +22,8 @@
 }
 
 .dropDownItems {
-    position:absolute;
+    position: absolute;
+    display: none;
 }
 
 .dropDownItem {
