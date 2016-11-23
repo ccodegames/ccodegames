@@ -11,7 +11,7 @@
 /* Menubar style along with sub elements */
 .menuBar {
     text-align: justify;
-    min-width: 500 px;
+    min-width: 500px;
 }
 .menuBar div {
     float: left;
