@@ -15,7 +15,6 @@
 }
 .menuBar div {
     float: left;
-
 }
 
 .menuItem {
@@ -27,4 +26,5 @@
 }
 .dropDownItem {
     position:relative;
+    display:inline-block;
 }
