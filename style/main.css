@@ -30,6 +30,6 @@
     display: block;
 }
 
-.item1 { left: 25%; }
-.item2 { left: 50%; }
-.item3 { left: 75%; }
+#announcements { left: 25%; }
+#bio { left: 50%; }
+#projects { left: 75%; }
