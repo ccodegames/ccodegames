@@ -8,6 +8,6 @@
     display: inline;
 }
 
-.menuBar > li {
+li {
     float: left;
 }
