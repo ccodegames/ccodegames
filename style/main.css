@@ -6,12 +6,12 @@
 
 .mainHeader {
     text-align: center;
-
 }
 
 /* Menubar style along with sub elements */
 .menuBar {
     text-align: justify;
+    min-width: 500 px;
 }
 .menuBar div {
     float: left;
