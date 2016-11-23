@@ -4,10 +4,15 @@
     background-color: lightblue;
 }
 
+/* Menubar style along with sub elements */
 .menuBar {
-    
+
+}
+.menuBar div {
+    float: left;
+
 }
 
-.menuBar li {
-    float: left;
+.menuItem {
+
 }
