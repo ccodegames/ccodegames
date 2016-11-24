@@ -25,7 +25,7 @@ h1 {
     text-align: justify;
     width: 99.6vw;
     margin: 0 auto;
-    
+
     font-family: monospace
 
 }
@@ -39,7 +39,7 @@ h1 {
 }
 
 .menuItem {
-    padding 10px;
+    padding: 2px 0 2px 0;
 
     background-color: azure;
 
@@ -60,4 +60,5 @@ h1 {
 .dropDownItem {
     display: block;
     width: auto;
+    margin: 3px;
 }
