@@ -60,5 +60,10 @@ h1 {
 .dropDownItem {
     display: block;
     width: auto;
-    margin: 3px;
+
+    margin: 0px;
+    padding: 3px;
+}
+.dropDownItem:hover {
+    background-color: yellow;
 }
