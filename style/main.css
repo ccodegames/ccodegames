@@ -28,6 +28,7 @@
 
 .dropDownItem {
     display: block;
+    width: auto;
 }
 
 #announcements { left: 25%; }
