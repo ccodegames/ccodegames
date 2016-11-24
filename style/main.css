@@ -12,23 +12,30 @@
 .menuBar {
     text-align: justify;
     min-width: 500px;
+
 }
 .menuBar div {
     float: left;
-    width: 33%;
     text-align: center;
+    width: 33%;
 
-    margin: 0;
-    border-style: groove;
+    margin: 0px;
 }
 
 .menuItem {
-    padding: 5px;
+    padding 5px;
+
+    background-color: azure;
+
+    border-style: double;
+    border-width: 0px 1px 0px 1px;
 }
 
 .dropDownItems {
     position: absolute;
     display: none;
+
+    background-color: aliceblue;
 }
 
 .dropDownItem {
