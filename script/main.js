@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    $("#projects").hover(function() {
+    $(".dropDown").hover(function() {
         $(this).children(".dropDownItems").slideToggle();
     });
 });
