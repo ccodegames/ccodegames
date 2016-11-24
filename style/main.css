@@ -15,6 +15,10 @@
 }
 .menuBar div {
     float: left;
+    width: 33%;
+    text-align: center;
+
+    border-style: groove;
 }
 
 .menuItem {
@@ -30,7 +34,3 @@
     display: block;
     width: auto;
 }
-
-#announcements { left: 25%; }
-#bio { left: 50%; }
-#projects { left: 75%; }
